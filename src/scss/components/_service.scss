@@ -2,6 +2,26 @@
 	background: var(--blue-color);
 	padding-bottom: 220px;
 	padding-top: 220px;
-	&__container {
+	&__buttons {
+		z-index: 15;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
+	&__button {
+		&-reversed {
+			transform: rotate(180deg);
+		}
+		&:hover {
+			path {
+				stroke: var(--light-brown-color);
+			}
+		}
+		path {
+			transition: stroke 0.2s ease-in;
+		}
 	}
 }
