@@ -1,3 +1,44 @@
 <header class="header">
-	<div class="container header__container"></div>
+	<div class="container header__container">
+		<a href="#">
+			<picture class="header__logo">
+				<source srcset="./img/logo.webp" type="image/webp" />
+				<img
+					loading="lazy"
+					src="./img/logo.png"
+					class="image"
+					width="269"
+					height="55"
+					alt="Логотип"
+				/>
+			</picture>
+		</a>
+		<nav class="nav" title="Навигационная панель">
+			<ul class="nav__list list-reset">
+				<li class="nav__item">
+					<a href="#" class="nav__link"> À la carte</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Wijnkaart</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Lunchmenu</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="header__phone">
+			<img
+				loading="lazy"
+				src="./img/phone.svg"
+				class="image header__icon"
+				width="24"
+				height="24"
+				alt="Иконка телефон"
+			/>
+			<a href="tel:+3292825725" class="header__tel">+32 9 282 57 25</a>
+		</div>
+	</div>
 </header>

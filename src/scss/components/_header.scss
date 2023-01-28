@@ -1,2 +1,22 @@
 .header {
+	padding-top: 55px;
+	width: 100%;
+	position: absolute;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__phone {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		margin-right: 11px;
+	}
+	&__tel {
+		color: var(--white-color);
+		font-size: 16px;
+		line-height: 24px;
+	}
 }
