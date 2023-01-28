@@ -1,0 +1,36 @@
+.slide {
+	display: flex;
+	justify-content: center;
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 785px;
+	}
+	&__quote {
+		margin-bottom: 34px;
+	}
+	&__title {
+		color: var(--light-brown-color);
+		margin-top: 0;
+		margin-bottom: 20px;
+		font-weight: 600;
+		font-size: 36px;
+		line-height: 40px;
+	}
+	&__text {
+		color: var(--white-color);
+		margin-bottom: 40px;
+		font-size: 16px;
+		line-height: 40px;
+		text-align: center;
+	}
+	&__author {
+		color: var(--light-brown-color);
+		margin: 0;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 40px;
+		letter-spacing: 0.245em;
+	}
+}
