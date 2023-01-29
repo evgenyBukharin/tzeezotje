@@ -1,7 +1,7 @@
 .hero {
 	color: var(--white-color);
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)),
-		url("../img/hero-bg.png");
+		url("../img/hero-bg.png") no-repeat center;
 	padding-top: 264px;
 	padding-bottom: 265px;
 	&__container {
