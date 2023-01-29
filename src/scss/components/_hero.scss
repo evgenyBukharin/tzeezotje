@@ -2,8 +2,9 @@
 	color: var(--white-color);
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)),
 		url("../img/hero-bg.png") no-repeat center;
-	padding-top: 264px;
-	padding-bottom: 265px;
+	display: flex;
+	align-items: center;
+	min-height: 901px;
 	&__container {
 		&-inner {
 			display: flex;
