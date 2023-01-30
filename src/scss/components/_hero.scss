@@ -36,9 +36,9 @@
 		font-weight: 500;
 		font-size: 18px;
 		line-height: 24px;
+		transition: background 0.4s ease-in-out;
 		&:hover {
-			animation: pulse 1.5s;
-			box-shadow: 0 0 0 2em rgba(#000, 0);
+			background: var(--dark-blue-color);
 		}
 	}
 	&__social {
@@ -63,12 +63,6 @@
 		line-height: 24px;
 		position: relative;
 		color: var(--white-color);
-	}
-}
-
-@keyframes pulse {
-	0% {
-		box-shadow: 0 0 0 0 var(--white-color);
 	}
 }
 
