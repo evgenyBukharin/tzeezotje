@@ -1,0 +1,61 @@
+.modal {
+	width: 100vw;
+	height: 100vh;
+	background: var(--light-black-color);
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+	cursor: pointer;
+	&-visible {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 30px;
+		border-radius: 8px;
+		background: var(--white-color);
+		cursor: default;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+	}
+	&__label {
+		font-weight: 500;
+		font-size: 22px;
+		text-align: center;
+	}
+	&__input {
+		margin-top: 8px;
+		margin-bottom: 12px;
+		padding: 6px;
+		text-align: center;
+		border: 1px solid var(--light-grey-color);
+		outline: none;
+		border-radius: 4px;
+		transition: border 0.2s ease-in;
+		&:focus {
+			border: 1px solid var(--grey-color);
+		}
+	}
+	&__btn {
+		padding: 16px;
+		background: var(--blue-color);
+	}
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 28px;
+	}
+	&__icon {
+		width: 26px;
+		height: 26px;
+	}
+}

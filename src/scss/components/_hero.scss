@@ -28,19 +28,6 @@
 		margin-top: 0;
 		margin-bottom: 40px;
 	}
-	&__button {
-		position: relative;
-		padding: 38px 65px;
-		background: var(--blue-color);
-		color: var(--white-color);
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 24px;
-		transition: background 0.4s ease-in-out;
-		&:hover {
-			background: var(--dark-blue-color);
-		}
-	}
 	&__social {
 		display: flex;
 	}
