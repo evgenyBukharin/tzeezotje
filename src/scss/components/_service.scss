@@ -27,3 +27,22 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.service {
+		padding-top: 140px;
+		padding-bottom: 140px;
+		&__buttons {
+			top: 10%;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.service {
+		&__buttons {
+			top: 0;
+			transform: translateY(0);
+		}
+	}
+}

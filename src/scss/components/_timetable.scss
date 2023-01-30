@@ -26,8 +26,6 @@
 		font-weight: 400;
 		font-size: 18px;
 		line-height: 32px;
-		display: flex;
-		align-items: center;
 		margin-top: 0;
 		margin-bottom: 20px;
 	}
@@ -36,6 +34,7 @@
 	}
 	&__dot {
 		margin-right: 12px;
+		transform: translateY(-60%);
 	}
 	&__images {
 		grid-column: 7 span;
@@ -51,8 +50,7 @@
 			z-index: 10;
 		}
 		&-second {
-			grid-column: 5 span;
-			grid-column-end: 7;
+			grid-column: 2 / 7;
 			justify-self: end;
 			z-index: 9;
 		}
@@ -66,6 +64,7 @@
 @media (max-width: 1200px) {
 	.timetable {
 		&__container {
+			column-gap: 0;
 			row-gap: 36px;
 		}
 		&__list {
@@ -80,10 +79,23 @@
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
 	.timetable {
 		&__list {
 			grid-column: 12 span;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.timetable {
+		&__text {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		&__title {
+			text-align: center;
 		}
 	}
 }

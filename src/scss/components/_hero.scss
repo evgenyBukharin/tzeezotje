@@ -2,6 +2,7 @@
 	color: var(--white-color);
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51)),
 		url("../img/hero-bg.png") no-repeat center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	min-height: 901px;
@@ -68,5 +69,43 @@
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 var(--white-color);
+	}
+}
+
+@media (max-width: 575px) {
+	.hero {
+		&__container {
+			&-inner {
+				flex-wrap: wrap;
+			}
+		}
+		&__social {
+			padding-top: 12px;
+		}
+		&__title {
+			font-size: 54px;
+			line-height: 70px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.hero {
+		&__container {
+			padding-top: 86px;
+		}
+		&__social {
+			padding-top: 18px;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.hero {
+		&__container {
+			&-inner {
+				justify-content: center;
+			}
+		}
 	}
 }

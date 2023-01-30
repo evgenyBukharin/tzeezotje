@@ -1,0 +1,8 @@
+.burger {
+	@include burger;
+	color: var(--white-color);
+	grid-column: -1;
+	align-self: center;
+	z-index: 40;
+	--burger-height: 24px;
+}
